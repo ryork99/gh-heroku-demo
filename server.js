@@ -18,18 +18,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-function processDataForFrontEnd(req, res) {
-  const baseURL = ""; // Enter the URL for the data you would like to retrieve here
-
-  // Your Fetch API call starts here
-  // Note that at no point do you "return" anything from this function -
-  // it instead handles returning data to your front end at line 34.
-
-}
-
-// Syntax change - we don't want to repeat ourselves,
-// or we'll end up with spelling errors in our endpoints.
-//
 app.route("/api")
   .get((req, res) => {
     (async () => {
